@@ -1,0 +1,20 @@
+DriveSimulator5 is a basic robot simuilation
+-Control+Shift+P for the command palette
+-Select both extensions for the simulation
+-Drag "Keyboard 0" under "System Joysticks" to "Joystick 0" under "Joysticks" to activate W, A, S and D as controls for the robot to be used in Teleoperated Mode
+-Show the robot field with NetworkTables....SmartDashboard...Field
+-Start Teleoperated mode or Autonomous mode and observe the resuls on the field.
+
+
+Simulator6 is a demonstration of PID using a simulated robot gyro to turn the robot in a particular direction
+
+Adjust the following variables to have the robot converge on a particular angle with behaviour determined by Kd and Kp. Try different values of the angle, Kp and Kd to better understand the PID approach to smooth robot operation. Note that the angle, Kp and Kd should all be positive according to the configuration of the program and general PID conventions.  This is actually a PD system as there was no "I" term included in the equations.
+
+
+private final double angle = 435; //To which angle should the robot turn?
+private double Kd = 0.4; //Derivative constant
+private double Kp = 0.4; //Proportional Constant
+
+For more information, see the following:
+https://docs.wpilib.org/en/stable/docs/software/advanced-controls/controllers/pidcontroller.html
+
